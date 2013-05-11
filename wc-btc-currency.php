@@ -5,11 +5,11 @@
  * Description: Adds Bitcoin currency in WooCommerce
  * Author: claudiosanches
  * Author URI: http://www.claudiosmweb.com/
- * Version: 1.0
+ * Version: 2.0
  * License: GPLv2 or later
  */
 
-if ( !class_exists( 'WC_BTC_Currency' ) ) {
+if ( ! class_exists( 'WC_BTC_Currency' ) ) {
 
     /**
      * Add BTC Currency in WooCommerce.
@@ -46,7 +46,7 @@ if ( !class_exists( 'WC_BTC_Currency' ) ) {
          * @return array             Currencies with BTC.
          */
         public function add_currency( $currencies ) {
-            $currencies['BTC'] = __( 'Bitcoin (&#3647;)', 'wcbtc' );
+            $currencies['BTC'] = __( 'Bitcoin', 'wcbtc' );
             asort( $currencies );
 
             return $currencies;

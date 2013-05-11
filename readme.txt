@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: ecommerce, e-commerce, commerce, wordpress ecommerce, currency, bitcoin, btc
 Requires at least: 3.0
 Tested up to: 3.5
-Stable tag: 1.0
+Stable tag: 2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -35,6 +35,10 @@ Works with [WooCommerce Paysius](http://wordpress.org/extend/plugins/woocommerce
 * This plugin is released under a GPL license.
 
 == Changelog ==
+
+= 2.0 ==
+
+* Updated to WooCommerce 2.0.
 
 = 1.0 =
 
