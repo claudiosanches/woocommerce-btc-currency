@@ -22,11 +22,11 @@ if ( ! class_exists( 'WC_BTC_Currency' ) ) {
         public function __construct() {
 
             // Actions.
-            add_action( 'plugins_loaded', array( &$this, 'load_textdomain' ), 0 );
+            add_action( 'plugins_loaded', array( $this, 'load_textdomain' ), 0 );
 
             // Filters.
-            add_filter( 'woocommerce_currencies', array( &$this, 'add_currency' ) );
-            add_filter( 'woocommerce_currency_symbol', array( &$this, 'currency_symbol' ), 1, 2 );
+            add_filter( 'woocommerce_currencies', array( $this, 'add_currency' ) );
+            add_filter( 'woocommerce_currency_symbol', array( $this, 'currency_symbol' ), 1, 2 );
         }
 
         /**
@@ -70,7 +70,7 @@ if ( ! class_exists( 'WC_BTC_Currency' ) ) {
             return $currency_symbol;
         }
 
-    } // close WC_BTC_Currency class.
+    }
 
     $WC_BTC_Currency = new WC_BTC_Currency();
 }
